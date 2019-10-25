@@ -2,15 +2,15 @@
 
 // Find the sum of all the multiples of 3 or 5 below 1000.
 
-function multiples_of_3_and_5() {
+function multiplesOf3And5(num) {
   let sum = 0;
 
-  for (let i = 3; i < 1000; i++) {
+  for (let i = 3; i < num; i++) {
     if (i % 3 === 0 || i % 5 === 0) sum += i
   }
 
   return sum
 }
 
-// multiples_of_3_and_5() 
+multiplesOf3And5(1000) 
 // 233168
